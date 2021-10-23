@@ -26,9 +26,11 @@ function createNewTodo(title, notes, date, colour) {
 
 function reinitializeTodoList() {
     const localStorageTodos = JSON.parse(window.localStorage.getItem('todoList'));
-    localStorageTodos.forEach(todo => {
-        todoList.push(todo);
-    })
+    if (localStorageTodos.length > 0) {
+        localStorageTodos.forEach(todo => {
+            todoList.push(todo);
+        })
+    }
     return todoList;
 }
 
