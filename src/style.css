@@ -27,7 +27,8 @@ button {
 }
 .content {
     height: 100%;
-    margin: 0 2rem;
+    margin: 0.5rem 2rem;
+    padding: 0;
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
     grid-template-rows: 5% 80% 10%;
@@ -35,11 +36,12 @@ button {
         "category search search"
         "category main main"
         "category add add";
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
 }
 .content > * {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 1rem;
-    margin: 0.5rem;
     background: rgba(245, 245, 245, 0.623);
 }
 .search-container {
@@ -146,6 +148,7 @@ button {
     grid-area: add;
     display: flex;
     align-items: center;
+    height: 4rem;
 }
 .addnew-button {
     margin-left: 1.2rem;
