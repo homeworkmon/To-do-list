@@ -1,3 +1,4 @@
+import 'normalize.css';
 import initializeWebsite from './render.js';
 import { displayController } from './dynamicdommethods.js';
 import './style.css';

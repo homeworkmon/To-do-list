@@ -15,7 +15,7 @@ html {
 }
 body {
     height: 99%;
-    margin: 0.3rem;
+    margin: 0;
     background: radial-gradient(#c0c0cc, #c2bdbd);
 }
 button {
@@ -24,6 +24,7 @@ button {
     font-weight: 900;
     border: none;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
 }
 .content {
     height: 100%;
@@ -45,11 +46,11 @@ button {
     background: rgba(245, 245, 245, 0.623);
 }
 .search-container {
+    margin: 0;
     grid-area: search;
-    height: 2rem;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding-left: 0.5rem;
 }
 #searchbar {
@@ -69,9 +70,9 @@ button {
     color: #1C1C1C;
 }
 .recent {
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    padding: 0.5rem;
+    height: 2.3rem;
+    border-radius: 2rem;
 }
 .group-container {
     height: 80%;
@@ -81,8 +82,8 @@ button {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .colour-group {
-    height: 5rem;
-    width: 5rem;
+    height: 9vh;
+    width: 9vh;
     border-radius: 50%;
 }
 #main {
@@ -101,6 +102,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 3rem;
 }
 .todo-content > * {
     margin-left: 2rem;
@@ -141,14 +143,14 @@ button {
 }
 .detail-view-button {
     margin-right: 3rem;
-    padding: 10px 13px;
+    height: 2rem;
     border-radius: 2rem;
 }
 .add-section {
     grid-area: add;
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 100%;
 }
 .addnew-button {
     margin-left: 1.2rem;
@@ -247,7 +249,7 @@ button {
     padding: 2rem;
     border-radius: 1rem;
     width: 32rem;
-    height: 40%;
+    height: 24rem;
     background-color: white;
     color: black;
 }
