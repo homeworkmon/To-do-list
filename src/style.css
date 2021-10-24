@@ -28,7 +28,7 @@ button {
 }
 .content {
     height: 100%;
-    margin: 0.5rem 2rem;
+    margin: 0.3rem 2rem;
     padding: 0;
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
@@ -51,6 +51,7 @@ button {
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding-left: 0.5rem;
 }
 #searchbar {
@@ -245,7 +246,7 @@ button {
 .modal-card {
     position: relative;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 2rem;
     border-radius: 1rem;
     width: 32rem;
