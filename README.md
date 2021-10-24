@@ -1,7 +1,5 @@
 # To-do-list
 
-# To-do-list
-
 [Live page](https://homeworkmon.github.io/To-do-list/)
 
 Learned SO much on this one!! This was an opportunity to put my new vanilla JS skills together for a final project. 
