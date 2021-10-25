@@ -112,6 +112,7 @@ function createModal() {
     dateInput.type = 'date';
     dateInput.id = 'date';
     dateInput.name = 'date';
+    dateInput.required = true;
     dateInput.defaultValue = format(new Date(), 'yyyy-MM-dd');
     dateDiv.appendChild(dateLabel);
     dateDiv.appendChild(dateInput);

@@ -14,9 +14,12 @@ html {
     margin: 0;
 }
 body {
-    height: 99%;
+    height: 100%;
     margin: 0;
     background: radial-gradient(#c0c0cc, #c2bdbd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button {
     background-color: var(--button-grey);
@@ -27,8 +30,8 @@ button {
     text-align: center;
 }
 .content {
-    height: 100%;
-    margin: 0.3rem 2rem;
+    height: 95vh;
+    width: 95%;
     padding: 0;
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
@@ -68,7 +71,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #1C1C1C;
+}
+.category-container > h1 {
+    margin: 0.3rem;
 }
 .recent {
     padding: 0.5rem;
@@ -77,15 +84,19 @@ button {
 }
 .group-container {
     height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .group-container > * {
-    margin: 1.2rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 1rem;
 }
 .colour-group {
-    height: 9vh;
-    width: 9vh;
-    border-radius: 50%;
+    height: 14%;
+    width: 60%;
 }
 #main {
     grid-area: main;
@@ -140,10 +151,10 @@ button {
     margin-left: 5rem;
     font-weight: 900;
     font-size: 700;
-    width: 50%;
+    width: 30%;
 }
 .detail-view-button {
-    margin-right: 3rem;
+    margin-right: 1rem;
     height: 2rem;
     border-radius: 2rem;
 }
@@ -163,14 +174,20 @@ button {
 .svg-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 6rem;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 25%;
+    margin-left: 4%;
 }
 .to-do-icon {
-    height: 1.8rem;
-    width: 1.8rem;
-    margin: 1rem;
-    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 4rem;
+    overflow: scroll;
 }
 .to-do-icon:hover {
     fill: #666464;
@@ -245,12 +262,14 @@ button {
 }
 .modal-card {
     position: relative;
+    border-radius: 1rem;
     margin: auto;
-    margin-top: 5%;
+    padding: 1rem;
+    margin-top: 8%;
+    width: 43%;
+    height: 50%;
     padding: 2rem;
     border-radius: 1rem;
-    width: 32rem;
-    height: 24rem;
     background-color: white;
     color: black;
 }
@@ -288,13 +307,14 @@ button {
 .colour-div {
     margin-top: 0.5rem;
     height: 5rem;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
 .colour-div > * {
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 90%;
+    width: 80%;
+    border-radius: 1rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     justify-self: center;
 }
